@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libalkimia</Name>
+        <Homepage>https://community.kde.org/Alkimia/libalkimia</Homepage>
+        <Packager>
+            <Name>Safa Arıman</Name>
+            <Email>safa@ariman.gen.tr</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>Financial library common classes for KDE SC</Summary>
+        <Description>Libalkimia is a library with common classes and functionality used by finance applications for the KDE SC. Currently it supports a common class to represent monetary values with arbitrary precision.</Description>
+        <Archive sha1sum="c0034c65e47629a48c776aad21da7533683662b6" type="tarxz">https://download.kde.org/stable/alkimia/8.0.2/alkimia-8.0.2.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>cmake</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>plasma-framework-devel</Dependency>
+            <Dependency>kpackage-devel</Dependency>
+            <Dependency>kdoctools-devel</Dependency>
+            <Dependency>kdelibs4-support-devel</Dependency>
+            <Dependency>knewstuff-devel</Dependency>
+            <Dependency>qt5-webkit-devel</Dependency>
+            <Dependency>kinit-devel</Dependency>
+            <Dependency>kunitconversion-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libalkimia</Name>
+        <RuntimeDependencies>
+            <Dependency>gmp</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>qt5-declarative</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency>kpackage</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="config">/etc</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>libalkimia-devel</Name>
+        <Summary>Development files for libalkimia</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">libalkimia</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2019-11-19</Date>
+            <Version>8.0.2</Version>
+            <Comment>First release</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safa@ariman.gen.tr</Email>
+        </Update>
+    </History>
+</PISI>

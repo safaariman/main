@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>libalkimia</Name>
+        <Summary xml:lang="tr">Financial library common classes for KDE SC</Summary>
+        <Description xml:lang="tr">Libalkimia is a library with common classes and functionality used by finance applications for the KDE SC. Currently it supports a common class to represent monetary values with arbitrary precision.</Description>
+    </Source>
+</PISI>

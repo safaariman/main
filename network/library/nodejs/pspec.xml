@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications</Summary>
         <Description>Evented I/O for V8 javascript</Description>
-        <Archive sha1sum="9647d364946d71f708b7174f77dc4f7b0b715d80" type="targz">https://nodejs.org/dist/v9.5.0/node-v9.5.0.tar.gz</Archive>
+        <Archive sha1sum="c146730fa3e4d5a11338487db1bbfe7273458dcb" type="targz">https://nodejs.org/dist/v12.13.0/node-v12.13.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>openssl-devel</Dependency>
             <Dependency>icu4c-devel</Dependency>
@@ -39,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2019-10-21</Date>
+            <Version>12.13.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safa@ariman.gen.tr</Email>
+        </Update>
         <Update release="4">
             <Date>2018-07-31</Date>
             <Version>9.5.0</Version>
